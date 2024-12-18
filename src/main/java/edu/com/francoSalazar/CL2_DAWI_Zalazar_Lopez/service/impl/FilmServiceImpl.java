@@ -31,8 +31,7 @@ public class FilmServiceImpl implements FilmService {
 
     @Override
     public List<FilmDto> findAll() {
-        System.out.println("_____________________________________________________");
-        System.out.println("_____________________________________________________");
+
         List<FilmDto> films= new ArrayList<>();
             Iterable<Film> iterable=filmRepository.findAll();
             iterable.forEach( film ->{
